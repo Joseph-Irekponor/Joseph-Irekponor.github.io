@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>A Nice &amp; Simple Contact Form</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <!-- Linking to css for contact options and navbar1 -->
+	<link rel="stylesheet" type="text/css" href="contactus.css" />
+
+</head>
+
+<body>
+      <!-- Navigation bar !-->
+	<div class="topnav" id="myTopnav">
+				<!-- Class active indicates which page we are on. href"" should link to desired page. -->
+		<a href="index.html" >Home</a>
+		<a href="nav2grid.html">Grid Example</a>
+		<a href="contact.html" class="active">Contact</a>
+		<a href="signup.html">Sign Up/Login</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
+
+	<div id="page-wrap">
+
+		<img src="images/title.gif" alt="A Nice &amp; Simple Contact Form" /><br /><br />
+
+		<div id="contact-area">
+      <!-- Ignore PHP as it does not work in GitHub. -->
+			<form method="post" action="contactengine.php">
+				<label for="Name">Name:</label>
+				<input type="text" name="Name" id="Name" />
+
+				<label for="City">City:</label>
+				<input type="text" name="City" id="City" />
+
+				<label for="Email">Email:</label>
+				<input type="text" name="Email" id="Email" />
+
+				<label for="Message">Message:</label><br />
+				<textarea name="Message" rows="20" cols="20" id="Message"></textarea>
+
+				<input type="submit" name="submit" value="Submit" class="submit-button" />
+			</form>
+
+			<div style="clear: both;"></div>
+
+
+
+		</div>
+
+	</div>
+
+	      <!-- linking to navbar1 javascript.-->
+<script src="navbar1.js"></script>
+</body>
+
+</html>
